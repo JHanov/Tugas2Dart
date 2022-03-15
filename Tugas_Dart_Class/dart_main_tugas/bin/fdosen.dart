@@ -3,11 +3,10 @@ import 'cperson.dart';
 class DosenTetap extends Person {
   int tunjKehadiran = 0;
   int sks = 0;
-  int gajidasar = 3400000;
+  int gajidasar = 0;
 
-  DosenTetap(String? nama, String? statusUniv, int tunjKehadiran, int gajidasar,
-      int sks)
-      : super(nama, statusUniv) {
+  DosenTetap(String? nama, int tunjKehadiran, int gajidasar, int sks)
+      : super(nama) {
     this.tunjKehadiran = tunjKehadiran;
     this.gajidasar = gajidasar;
     this.sks = sks;
@@ -21,8 +20,7 @@ class DosenTetap extends Person {
 class DosenTamu extends Person {
   int sks = 0;
 
-  DosenTamu(String? nama, String? statusUniv, int sks)
-      : super(nama, statusUniv) {
+  DosenTamu(String? nama, int sks) : super(nama) {
     this.sks = sks;
   }
   get Gaji {
@@ -34,8 +32,7 @@ class DosenLB extends Person {
   int sks = 0;
   int gajidasar = 3400000;
 
-  DosenLB(String? nama, String? statusUniv, int sks, int gajidasar)
-      : super(nama, statusUniv) {
+  DosenLB(String? nama, int sks, int gajidasar) : super(nama) {
     this.gajidasar = gajidasar;
     this.sks = sks;
   }

@@ -5,9 +5,7 @@ class Staf extends Person {
   int cuti = 0;
   int gajidasar = 3400000;
 
-  Staf(String? nama, String? statusUniv, int tunjKehadiran, int cuti,
-      int gajidasar)
-      : super(nama, statusUniv) {
+  Staf(String? nama, int tunjKehadiran, int cuti, int gajidasar) : super(nama) {
     this.tunjKehadiran = tunjKehadiran;
     this.cuti = cuti;
   }

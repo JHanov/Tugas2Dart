@@ -2,13 +2,11 @@ import 'cperson.dart';
 
 class Mahasiswa extends Person {
   int sks = 2;
-  String status = 'aktif';
+  int status = 1;
   int ips = 0;
   int ipk = 0;
 
-  Mahasiswa(String? nama, String? statusUniv, int sks, String status, int ips,
-      int ipk)
-      : super(nama, statusUniv) {
+  Mahasiswa(String? nama, int sks, int status, int ips, int ipk) : super(nama) {
     this.sks = sks;
     this.status = status;
     this.ipk = ipk;
